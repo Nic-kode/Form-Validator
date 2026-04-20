@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register</h1>
+
+      <!-- ==============FORM=============== -->
+      <form type="submit" id="register-form">
+        <!-- Username -->
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter username" />
+          <small id="username-error-text">Username is required</small>
+        </div>
+
+        <!-- E-mail -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            class="warning"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email" />
+          <small id="email-error-text">Email is required</small>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter password" />
+          <small id="password-error-text">Password is required</small>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            placeholder="Confirm Password" />
+          <small id="confirmpassword-error-text"
+            >Confirm Password is required</small
+          >
+        </div>
+        <button type="submit" id="register-btn">Register</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
